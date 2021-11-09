@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Fresh Tech Blog</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets.style.css">
 </head>
 
 <body>
-    <div>
+    <div class-"container mx-auto">
         <header>
-            <h1>
+            <h1 class="text-center p-8">
                 <a href="/">Fresh Tech Blog</a>
             </h1>
-            <nav>
+            <nav class="text-right px-8">
                 {{#if loggedIn}}
                 <a href="/dashboard">dashboard</a>
                 <button id="logout" class="btn-no-style">logout</button>
@@ -23,9 +24,11 @@
                 {{/if}}
             </nav>
         </header>
-        <main>
+        <div class="flex justify-center"></div>
+            <main>
             {{{ body }}}
-        </main>
+            </main>
+        </div>
     </div>
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
