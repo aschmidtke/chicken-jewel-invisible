@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="/stylesheets.style.css">
 </head>
 
-<body>
+<body class="font-serif bg-gray-200">
     <div class-"container mx-auto">
-        <header>
-            <h1 class="text-center p-8">
-                <a href="/">Fresh Tech Blog</a>
-            </h1>
-            <nav class="text-right px-8">
+        <header class="bg-gradient-to-r from-green-500 to-gray-200px-8">
+            <nav class="text-right pr-8">
                 {{#if loggedIn}}
                 <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
+                <span>/</span>
+                <button id="logout" class="btn-no-style hover:bg-gray-300">logout</button>
                 {{else}}
                 <a href="/login">login</a>
                 {{/if}}
             </nav>
+            <h1 class="text-center p-8 font-semibold tracking-wider">
+                <a href="/">Fresh Tech Blog</a>
+            </h1>
         </header>
         <div class="flex justify-center"></div>
             <main>

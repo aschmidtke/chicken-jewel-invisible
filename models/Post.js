@@ -12,11 +12,11 @@ Post.init(
             autoIncrement: true
         },
         title: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false
         },
         post_url: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 isURL: true
