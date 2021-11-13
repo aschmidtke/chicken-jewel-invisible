@@ -28,7 +28,7 @@ app.use(session(sess));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(process.env.PORT, () => console.log('Now Listening'));
+    app.listen(PORT, () => console.log('Now Listening'));
 });
 
 const hbs = exphbs.create({ helpers });
