@@ -6,6 +6,9 @@
       <a href="{{post_url}}" target="_blank">{{format_url post_url}}</a>
     </div>
     <div class="meta">
+      <div>
+            {{user.username}} on {{format_date created_at}}
+        </div>
       <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
     </div>
   </div>

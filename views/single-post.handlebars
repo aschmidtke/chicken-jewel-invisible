@@ -5,6 +5,9 @@
     <div>
         <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </div>
+    <div>
+        <button type="button" class="delete-post-btn">Delete post</button>
+      </div>
 </div>
 {{#if loggedIn}}
 <form class="comment-form grid justify-items-center py-8">
@@ -21,4 +24,5 @@
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
+<script src="/javascript/delete-post.js"></script>
 {{/if}}

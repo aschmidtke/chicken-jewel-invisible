@@ -5,16 +5,14 @@
     </h2>
     <form class="edit-post-form">
       <div>
-        <input name="post-title" type="text" value="{{post.title}}" />
+        <input class="border-2 border-green-500" name="post-title" type="text" value="{{post.title}}" />
         <span>({{format_url post.post_url}})</span>
       </div>
       <div class="text-center py-8">
       <div>
         <button type="submit">Save post</button>
       </div>
-      <div>
-        <button type="button" class="delete-post-btn">Delete post</button>
-      </div>
+      
       </div>
     </form>
   </div>
@@ -23,5 +21,4 @@
 {{> comments post.comments}}
 
 <script src="/javascript/edit-post.js"></script>
-<script src="/javascript/delete-post.js"></script>
 <script src="/javascript/comment.js"></script>
