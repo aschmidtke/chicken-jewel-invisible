@@ -1,6 +1,6 @@
 # chicken-jewel-invisible
 # Tech Blog
-This is a simple tech blog where users can post, edit, delete and comment on tech-related post.
+This is a simple tech blog where users can post, edit, delete and comment on tech-related posts.
 
 ## Contents
 - server.js which runs the main file
